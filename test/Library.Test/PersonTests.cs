@@ -13,9 +13,17 @@ namespace Tests
         }
 
         [Test]
-        public void Test1() // Cambiá el nombre para indicar qué estás probando
+        public void PersonWithValidId()
         {
-            // Insertá tu código  de pruebaaquí
+            Person person = new Person("Test", "5.377.044-0");
+            string name = "Test";
+            string id = "5.377.044-0";
+        }   
+
+        [Test]
+        public void PersonWithWrongVerifierDigit()
+        {
+            Person person = new Person("Test", "5.377.044-0");
         }
     }
 }
